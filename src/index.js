@@ -30,7 +30,7 @@ function onSearchInput(e) {
                 Notiflix.Notify.info("Too many matches found. Please enter a more specific name.");
                 clearAllInformationAboutCountries();
             } else if (countries.length === 1) {
-                appendCountriesMarkup(countries);
+                countryListEl.innerHTML = '';
                 appendInfoMarkup(countries);
             } else if (countries.length < 11 && countries.length > 1) {
                 appendCountriesMarkup(countries);
